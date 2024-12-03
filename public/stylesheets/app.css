@@ -23,3 +23,31 @@ a.photo{
 a.photo:hover{
     padding: 10px;
 }
+/* 
+  Media Queries go on the bottom of your stylesheet
+
+  Desktop-first: max-widths in DESC
+  Mobile-first: min-widths in ASC
+*/
+
+@media screen and (max-width: 768px) {
+    main {
+      width: 70%;
+    } 
+  }
+  
+  @media screen and (max-width: 480px) {
+    main {
+      width: 95%;
+    } 
+  
+    .user-info h2 {               
+      font-size: 1.1em;
+    }
+  
+    .user-info h3,
+    .actions,
+    p {
+      font-size: 0.9em;
+    }
+  }
